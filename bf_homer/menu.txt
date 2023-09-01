@@ -1,0 +1,36 @@
+Gestão
+- Demanda de risco
+- Consultar demandas
+
+Compras
+- Fornecedores
+- Formulários
+- Consultar demandas
+
+Fornecedores
+- Formulário
+
+Segurança
+- Fornecedores
+- Consultar demandas
+
+Privacidade
+- Consultar demandas
+- Análise de Risco
+
+Compliance RFP
+Compliance Risco
+
+Demandas
+- Acompanhamento
+- Evidências
+- Fornecedores
+
+
+
+** levantar bola com o pedro de como poderia ser o menu, de forma mais profissional na escrita e na distribuição das áreas.//collapsible
+
+
+
+DPO: Tudo
+Gestão: Gestão / 

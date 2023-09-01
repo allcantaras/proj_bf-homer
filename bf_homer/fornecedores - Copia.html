@@ -1,0 +1,356 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>H.O.M.E.R - Fornecedores</title>
+
+</head>
+
+<body class="body has-fixed-sidenav">
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <header>
+    <div class="hide-on-large-only">
+      <div class="navbar-fixed">
+        <nav class="navbar white">
+          <div class="nav-wrapper">
+            <div class="container center-align">
+              <a href="home.html" class="brand-logo"><i class="material-icons black-text">home</i></a>
+              <a href="#" class="sidenav-trigger left" data-target="sidenav-left">
+                <i class="material-icons black-text">menu</i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div id="sidenav-left" class="sidenav sidenav-fixed" style="transform: translateX(0px);">
+
+      <div class="user-view">
+        <div class="background">
+          <img src="img/bg.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="img/user.jpg"></a>
+        <a href="#name"><span class="white-text name">Admin</span></a>
+        <a href="#email"><span class="white-text email">admin@beijaflore.com</span></a>
+      </div>
+
+      <ul class="collapsible" data-collapsible="accordion">
+
+        <li class="waves-effect">
+          <a href="home.html" class="collapsible-header" tabindex="0">
+            Home
+            <i class="material-icons light-blue-text darken-4 left">home</i>
+          </a>
+        </li>
+
+        <!-- GESTÃO DE USUÁRIOS -->
+        <li class="waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            Gestão de Usuários
+            <i class="material-icons light-blue-text darken-4 left">people</i>
+          </a>
+          <div class="collapsible-body" style="display: block;">
+            <ul>
+              <li>
+                <a href="cadastro.html" class="waves-effect">
+                  Novo Usuário
+                  <i class="material-icons">person_add</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar Usuário
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- GESTÃO -->
+        <li class="waves-effect">
+          <a class="collapsible-header" tabindex="1">
+            <i class="material-icons left light-blue-text darken-4">assignment</i>
+            Gestão
+          </a>
+          <div class="collapsible-body" style="display: block;">
+            <ul>
+              <li>
+                <a href="demanda.html" class="waves-effect">
+                  Abrir Serviço
+                  <i class="material-icons">edit</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- COMPRAS -->
+        <li class="waves-effect">
+          <a class="collapsible-header" tabindex="2">
+            <i class="material-icons left light-blue-text darken-4">work</i>
+            Compras
+          </a>
+          <div class="collapsible-body" style="display: block;">
+            <ul>
+              <li>
+                <a href="fornecedores.html" class="waves-effect">
+                  Fornecedores
+                  <i class="material-icons">perm_identity</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Formulários
+                  <i class="material-icons">list</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!-- SEGURANÇA -->
+        <li class="waves-effect">
+          <a class="collapsible-header" tabindex="4">
+            <i class="material-icons left light-blue-text darken-4">security</i>
+            Segurança
+          </a>
+          <div class="collapsible-body" style="display: block;">
+            <ul>
+              <li>
+                <a href="#" class="waves-effect">
+                  Ordens de Serviços
+                  <i class="material-icons">assignment</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar Serviços
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- PRIVACIDADE -->
+        <li class="waves-effect">
+          <a class="collapsible-header" tabindex="5">
+            <i class="material-icons left light-blue-text darken-4">fingerprint</i>
+            Privacidade
+          </a>
+          <div class="collapsible-body" style="display: block;">
+            <ul>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Análise de Maturidade
+                  <i class="material-icons">show_chart</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!--  COMPLIANCE RFP -->
+        <li class="waves-effect">
+          <a class="collapsible-header" tabindex="6">
+            <i class="material-icons left light-blue-text darken-4">book</i>
+            Compliance RFP
+          </a>
+          <div class="collapsible-body" style="display: block;">
+            <ul>
+              <li>
+                <a href="rfp_clausula.html" charset="waves-effect">
+                  Cadastro de Cláusulas
+                  <i class="material-icons">playlist_add</i>
+                </a>
+              </li>
+              <li>
+                <a href="rfp_matriz.html" charset="waves-effect">
+                  Matriz de Cláusulas
+                  <i class="material-icons">reorder</i>
+                </a>
+              </li>
+              <li>
+                <a href="rfp_controle.html" charset="waves-effect">
+                  Controle de Cláusulas
+                  <i class="material-icons">dashboard</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- COMPLIANCE RISCO -->
+        <li class="waves-effect">
+          <a class="collapsible-header" tabindex="7">
+            <i class="material-icons left light-blue-text darken-4">lock</i>
+            Compliance Risco
+          </a>
+          <div class="collapsible-body" style="display: block;">
+            <ul>
+              <li>
+                <a href="risco_questoes.html" charset="waves-effect">
+                  Cadastro de Questão
+                  <i class="material-icons">playlist_add</i>
+                </a>
+              </li>
+              <li>
+                <a href="matriz_questoes.html" charset="waves-effect">
+                  Matriz de Questões
+                  <i class="material-icons">reorder</i>
+                </a>
+              </li>
+              <li>
+                <a href="controle_questoes.html" charset="waves-effect">
+                  Controle de Questões
+                  <i class="material-icons">dashboard</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    </li>
+  </div>
+
+</header>
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="card horizontal">
+          <div class="card-stacked">          
+            <div class="card-content">
+              <span class="card-title"><blockquote>
+                <h4>Fornecedores</h4>
+              </blockquote></span>
+              <form class="col s12 m12 l12">
+                <div class="row">
+
+                  <div class="input-field col s12 m6 l6">
+                    <input type="text" id="razao_social" class="validate" required>
+                    <label for="razao_social">Razão Social</label>
+                  </div>
+                  <div class="input-field col s12 m6 l6">
+                    <input type="text" id="cnpj" class="validate" required>
+                    <label for="cnpj">CNPJ</label>
+                  </div>
+                  <div class="input-field col s12 m4 l4">
+                    <input type="text" id="nome_contato" class="validate" required>
+                    <label for="nome_contato">Nome do contato</label>
+                  </div>
+                  <div class="input-field col s12 m4 l4">
+                    <input type="text" id="tel_contato" class="validate" required>
+                    <label for="tel_contato">Telefone do contato</label>
+                  </div>
+                  <div class="input-field col s12 m4 l4">
+                    <input type="email" id="email_contato" class="validate" required>
+                    <label for="email_contato">E-mail do contato</label>
+                  </div>
+                </div>
+                <div class="row right">
+                  <a href="#"><button class="btn waves-effect waves-light light-blue darken-4">Cadastrar<i class="material-icons left">save</i></button></a>
+                </div>
+              </form>
+
+              <table class="striped highlight responsive-table">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>CNPJ</th>
+                    <th>Nome do Contato</th>
+                    <th>Telefone do Contato</th>
+                    <th>E-mail do Contato</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Fornecedor 1</td>
+                    <td>80.165.798/0001-60</td>
+                    <td>Fulano</td>
+                    <td>(11) 99999-9999</td>
+                    <td>example@email.com</td>
+                  </tr>
+                  <tr>
+                    <td>Fornecedor 2</td>
+                    <td>80.165.798/0001-60</td>
+                    <td>Ciclano</td>
+                    <td>(11) 99999-9999</td>
+                    <td>example@email.com</td>
+                  </tr>
+                  <tr>
+                    <td>Fornecedor 3</td>
+                    <td>80.165.798/0001-60</td>
+                    <td>Beltrano</td>
+                    <td>(11) 99999-9999</td>
+                    <td>example@email.com</td>
+                  </tr>
+                  <tr>
+                    <td>Fornecedor 4</td>
+                    <td>80.165.798/0001-60</td>
+                    <td>Antonio</td>
+                    <td>(11) 99999-9999</td>
+                    <td>example@email.com</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+
+    $('.datepicker').datepicker();
+
+    $('select').formSelect();
+
+    $('.collapsible').collapsible();
+  });
+</script>
+
+</body>
+</html>
+
+

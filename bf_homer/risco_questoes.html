@@ -1,0 +1,408 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>H.O.M.E.R - Questões</title>
+
+</head>
+
+<body class="body has-fixed-sidenav">
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <header>
+    <div class="hide-on-large-only">
+      <div class="navbar-fixed">
+        <nav class="navbar white">
+          <div class="nav-wrapper">
+            <div class="container center-align">
+              <a href="home.html" class="brand-logo"><i class="material-icons black-text">home</i></a>
+              <a href="#" class="sidenav-trigger left" data-target="sidenav-left">
+                <i class="material-icons black-text">menu</i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <ul id="sidenav-left" class="sidenav sidenav-fixed">
+
+      <div class="user-view">
+        <div class="background">
+          <img src="img/bg.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="img/user.jpg"></a>
+        <a href="#name"><span class="white-text name">Admin</span></a>
+        <a href="#email"><span class="white-text email">admin@beijaflore.com</span></a>
+      </div>
+
+      <ul class="collapsible collapsible-accordion">
+
+        <li class="bold waves-effect">
+          <a href="home.html" class="collapsible-header" tabindex="0">
+            Home
+            <i class="material-icons left">home</i>
+          </a>
+        </li>
+
+        <!-- GESTÃO DE USUÁRIOS -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            Gestão de Usuários
+            <i class="material-icons left">people</i>
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="cadastro.html" class="waves-effect active">
+                  Novo Usuário
+                  <i class="material-icons">person_add</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar Usuário
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- GESTÃO -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">assignment</i>
+            Gestão
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="demanda.html" class="waves-effect">
+                  Abrir Serviço
+                  <i class="material-icons">edit</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- COMPRAS -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">work</i>
+            Compras
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="fornecedores.html" class="waves-effect">
+                  Fornecedores
+                  <i class="material-icons">perm_identity</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Formulários
+                  <i class="material-icons">list</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!-- SEGURANÇA -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">security</i>
+            Segurança
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="#" class="waves-effect">
+                  Ordens de Serviços
+                  <i class="material-icons">assignment</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar Serviços
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- PRIVACIDADE -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">fingerprint</i>
+            Privacidade
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="analise_maturidade.html" class="waves-effect">
+                  Análise de Maturidade
+                  <i class="material-icons">insert_chart</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!--  COMPLIANCE RFP -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">book</i>
+            Compliance RFP
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="rfp_clausula.html" charset="waves-effect">
+                  Cadastro de Cláusulas
+                  <i class="material-icons">playlist_add</i>
+                </a>
+              </li>
+              <li>
+                <a href="rfp_matriz.html" charset="waves-effect">
+                  Matriz de Cláusulas
+                  <i class="material-icons">reorder</i>
+                </a>
+              </li>
+              <li>
+                <a href="rfp_controle.html" charset="waves-effect">
+                  Controle de Cláusulas
+                  <i class="material-icons">dashboard</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- COMPLIANCE RISCO -->
+        <li class="bold waves-effect active">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">lock</i>
+            Compliance Risco
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="risco_questoes.html" charset="waves-effect">
+                  Cadastro de Questão
+                  <i class="material-icons">playlist_add</i>
+                </a>
+              </li>
+              <li>
+                <a href="matriz_questoes.html" charset="waves-effect">
+                  Matriz de Questões
+                  <i class="material-icons">reorder</i>
+                </a>
+              </li>
+              <li>
+                <a href="controle_questoes.html" charset="waves-effect">
+                  Controle de Questões
+                  <i class="material-icons">dashboard</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="bold waves-effect">
+          <a class="collapsible-header red-text" tabindex="0" href="home.html">
+            <i class="material-icons left">keyboard_return</i>
+            Sair
+          </a>
+        </li>
+
+      </ul>
+    </ul>
+
+  </header>
+
+<main>
+  <div class="container">
+    <div class="row">
+
+      <div class="col s12 m12 l12">
+
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <span class="card-title"><blockquote><h4>Questões</h4></blockquote></span>
+
+              <form class="col s12 m12 l12">
+                <div class="row">
+
+                  <div class="input-field col s12 m4 l4">
+                    <textarea id="questao" class="materialize-textarea"></textarea>
+                    <label for="questao">Questão</label>
+                  </div>
+
+                  <div class="input-field col s12 m4 l4">
+                    <select>
+                      <option value="" disabled selected>Dimensão de Análise</option>
+                      <option value="1">ACESSO</option>
+                      <option value="2">FERRAMENTAS</option>
+                      <option value="3">PROCEDIMENTOS DE SEGURANÇA</option>
+                      <option value="4">COMPLIANCE</option>
+                      <option value="5">AUDITORIA</option>
+                      <option value="6">POLÍTICAS</option>
+                    </select>
+                  </div>
+
+                  <div class="input-field col s12 m4 l4">
+                    <select>
+                      <option value="" disabled selected>Mandatória/Classificatória</option>
+                      <option value="1">Mandatória</option>
+                      <option value="2">Classificatóra</option>
+                    </select>
+                  </div>
+
+                  <div class="row"></div>
+
+                  <span class="card-title"><blockquote><h4>Ambientes e Criticidade</h4></blockquote></span>
+                  <div class="col s12 m2 l2">
+                    <label>
+                      <input type="checkbox">
+                      <span>On-Premises</span>
+                    </label>
+                    <select multiple>
+                      <option value="" disabled selected>Criticidade</option>
+                      <option value="1">Pouco Crítico</option>
+                      <option value="2">Moderado</option>
+                      <option value="3">Severo</option>
+                      <option value="4">Crítico</option>
+                    </select>
+                  </div>
+
+                  <div class="col s12 m2 l2">
+                    <label>
+                      <input type="checkbox">
+                      <span>Colocation</span>
+                    </label>
+                    <select multiple>
+                      <option value="" disabled selected>Criticidade</option>
+                      <option value="1">Pouco Crítico</option>
+                      <option value="2">Moderado</option>
+                      <option value="3">Severo</option>
+                      <option value="4">Crítico</option>
+                    </select>
+                  </div>
+
+                  <div class="col s12 m2 l2">
+                    <label>
+                      <input type="checkbox">
+                      <span>Hosting</span>
+                    </label>
+                    <select multiple>
+                      <option value="" disabled selected>Criticidade</option>
+                      <option value="1">Pouco Crítico</option>
+                      <option value="2">Moderado</option>
+                      <option value="3">Severo</option>
+                      <option value="4">Crítico</option>
+                    </select>
+                  </div>
+
+                  <div class="col s12 m2 l2">
+                    <label>
+                      <input type="checkbox">
+                      <span>IaaS</span>
+                    </label>
+                    <select multiple>
+                      <option value="" disabled selected>Criticidade</option>
+                      <option value="1">Pouco Crítico</option>
+                      <option value="2">Moderado</option>
+                      <option value="3">Severo</option>
+                      <option value="4">Crítico</option>
+                    </select>
+                  </div>
+
+                  <div class="col s12 m2 l2">
+                    <label>
+                      <input type="checkbox">
+                      <span>SaaS</span>
+                    </label>
+                    <select multiple>
+                      <option value="" disabled selected>Criticidade</option>
+                      <option value="1">Pouco Crítico</option>
+                      <option value="2">Moderado</option>
+                      <option value="3">Severo</option>
+                      <option value="4">Crítico</option>
+                    </select>
+                  </div>
+
+                  <div class="col s12 m2 l2">
+                    <label>
+                      <input type="checkbox">
+                      <span>PaaS</span>
+                    </label>
+                    <select multiple>
+                      <option value="" disabled selected>Criticidade</option>
+                      <option value="1">Pouco Crítico</option>
+                      <option value="2">Moderado</option>
+                      <option value="3">Severo</option>
+                      <option value="4">Crítico</option>
+                    </select>
+                  </div>
+
+                </div>
+                <a href="#" class="right"><button class="btn waves-effect waves-light light-blue darken-4">GRAVAR<i class="material-icons left">save</i></button></a>
+              </form>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+
+    $('.datepicker').datepicker();
+
+    $('select').formSelect();
+
+    $('.collapsible').collapsible();
+  });
+</script>
+
+</body>
+</html>
+
+

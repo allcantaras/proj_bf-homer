@@ -1,0 +1,22 @@
+O que falta?
+
+0. waves effect no index
+1. Alinhar novamente com os meninos quais telas vão compor o sistema.
+2. Construir as telas, somente front.
+3. Com as telas prontas, construir arquivo PHP para guardar as informações que se repetem em todos os layouts.
+
+
+Cadastro
+- Primeiro e ultimo nome
+- 
+
+
+- nome de usuário é a primeira letra mais ultimo sobrenome
+- senha padrao 123456
+- no primeiro acesso o usuário deverá mudar a senha
+
+
+
+Alinhar com o pessoal:
+- Campos do cadastro de usuário
+- 

@@ -1,0 +1,33 @@
+
+- Analista de Compras > Envia o link do formulário e (Contrato/DuoDIG/Aderencia/Questionário de Ética).
+
+- Cara de TI/Segurança da Info > Valida as evidências anexadas nas respostas do questionário.
+
+- Fornecedor > Acompanhar o processo, as etapas e andamanto.
+
+- Analista de Privacidade > Recebe o formulário e avalia a maturidade, da o ok, abaixo do DPO.
+
+COMPRAS > FORNECEDOR > SI > PRIVACIDADE > (SE DER MERDA SOBE PRO DPO)
+SI
+PRIVACIDADE
+FORNECEDOR
+
+COMPLIANCE RISCO > DETERMINAR AS PERGUNTAS PARA CADA RISCO (pode ser nós ou o cliente).
+COMPLIANCE RFP > RFP, REDIGIR CLÁUSULAS.
+	(
+COMPRAS > Gerar o Link e envia pro cliente e também gera o RFP (pdf/word).
+FORNECEDOR > Visualização nv 2.
+SI > Visualiza formulário e Valida nv 3.
+PRIVACIDADE > Logs do SI, Formulários, Etapas nv 4 - Evolução do cliente a cada troca de contrato.
+DPO ADMIN > Visualização Geral nv 5 - Evolução do cliente a cada troca de contrato.
+
+Gestor da area demandante - Responsável por abrir um chamado/demanda.
+	- Responde as perguntas de risco dos dados.
+	- O sistema calcula.
+
+DPO faz o cadastro do gestor de cada area demandante.
+
+
+DPO > Ve tudo
+Gestor da area demandante > demanda.html
+Analista de Compras > 
