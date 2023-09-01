@@ -1,0 +1,4 @@
+-ignore-
+NOVO TESTE DE INSERÇÃO EM MASSA COM MULTIPLA CRITICIDADE; Acesso; Mandatória;          Pouco Crítico, Moderado, Severo, Crítico; Moderado; Severo; Pouco Crítico; Severo; Crítico
+NOVO TESTE DE INSERÇÃO EM MASSA COM MULTIPLA CRITICIDADE; Acesso; Mandatória;     Moderado, Severo, Crítico; Moderado; Severo; Pouco Crítico; Severo; Crítico
+NOVO TESTE DE INSERÇÃO EM MASSA COM MULTIPLA CRITICIDADE; Acesso; Mandatória;    Moderado, Severo; Moderado; Severo;Moderado, Severo, Crítico; Severo; Crítico

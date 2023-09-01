@@ -1,0 +1,6 @@
+O que falta:
+- Esconder opções de acordo com permissão
+- criar tabela para cada topico de serviço
+- confirmação de e-mail. // valid
+- usuário troca senha através do e-mail //
+

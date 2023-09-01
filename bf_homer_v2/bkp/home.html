@@ -1,0 +1,293 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <title>H.O.M.E.R - Home</title>
+</head>
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+
+    $('select').formSelect();
+
+    $('.collapsible').collapsible();
+
+    $('.#clausula').characterCounter();
+  });
+</script>
+
+<body class="body has-fixed-sidenav">
+
+  <header>
+    <nav class="navbar white">
+      <div class="nav-wrapper">
+        <a href="#" class="center brand-logo black-text">H.O.M.E.R</a>
+        <a href="#" class="sidenav-trigger left" data-target="sidenav-left">
+          <i class="material-icons black-text">menu</i>
+        </a>
+      </div>
+    </nav>
+
+    <ul id="sidenav-left" class="sidenav sidenav-fixed">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="img/bg.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="img/user.jpg"></a>
+          <a href="#name"><span class="white-text name">Admin</span></a>
+          <a href="#email"><span class="white-text email">admin@beijaflore.com</span></a>
+        </div>
+      </li>
+      <li class="no-padding">
+       <ul class="collapsible collapsible-accordion">
+
+        <li class="bold waves-effect active">
+          <a href="home.html" class="collapsible-header" tabindex="0">
+            Home
+            <i class="material-icons left">home</i>
+          </a>
+        </li>
+
+        <!-- GESTÃO DE USUÁRIOS -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            Gestão de Usuários
+            <i class="material-icons left">people</i>
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="cadastro.html" class="waves-effect">
+                  Novo Usuário
+                  <i class="material-icons">person_add</i>
+                </a>
+              </li>
+              <li>
+                <a href="usuarios.html" class="waves-effect">
+                  Consultar Usuário
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- GESTÃO -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">assignment</i>
+            Gestão
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="demanda.html" class="waves-effect">
+                  Abrir Serviço
+                  <i class="material-icons">edit</i>
+                </a>
+              </li>
+              <li>
+                <a href="consulta.html" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- COMPRAS -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">work</i>
+            Compras
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="fornecedores.html" class="waves-effect">
+                  Fornecedores
+                  <i class="material-icons">perm_identity</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Formulários
+                  <i class="material-icons">list</i>
+                </a>
+              </li>
+              <li>
+                <a href="consulta.html" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!-- SEGURANÇA -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">security</i>
+            Segurança
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="#" class="waves-effect">
+                  Ordens de demandas
+                  <i class="material-icons">assignment</i>
+                </a>
+              </li>
+              <li>
+                <a href="consulta.html" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- PRIVACIDADE -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">fingerprint</i>
+            Privacidade
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="analise_maturidade.html" class="waves-effect">
+                  Análise de Maturidade
+                  <i class="material-icons">insert_chart</i>
+                </a>
+              </li>
+              <li>
+                <a href="consulta.html" class="waves-effect">
+                  Consultar demandas
+                  <i class="material-icons">search</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!--  COMPLIANCE RFP -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">book</i>
+            Riscos de Compliance
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="rfp_clausula.html" class="waves-effect">
+                  Cadastro de Cláusulas
+                  <i class="material-icons">playlist_add</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Matriz de Cláusulas
+                  <i class="material-icons">reorder</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Controle de Cláusulas
+                  <i class="material-icons">dashboard</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- COMPLIANCE RISCO -->
+        <li class="bold waves-effect">
+          <a class="collapsible-header" tabindex="0">
+            <i class="material-icons left">lock</i>
+            Riscos de Segurança
+          </a>
+          <div class="collapsible-body">
+            <ul>
+              <li>
+                <a href="risco_questoes.html" class="waves-effect">
+                  Cadastro de Questão
+                  <i class="material-icons">playlist_add</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Matriz de Questões
+                  <i class="material-icons">reorder</i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="waves-effect">
+                  Controle de Questões
+                  <i class="material-icons">dashboard</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="bold waves-effect">
+          <a class="collapsible-header red-text" tabindex="0" href="index.html">
+            <i class="material-icons left">keyboard_return</i>
+            Sair
+          </a>
+        </li>
+
+      </ul>
+    </li>
+
+  </ul>
+
+</header>
+
+<main>
+  <div class="container">
+    <div class="masonry row">
+      <div class="col s12">
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <blockquote><span class="card-title"><h4>Home</h4></span></blockquote>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+              <br>
+
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+              <br>
+
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+</body>
+</html>
+
+

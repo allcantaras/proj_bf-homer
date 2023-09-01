@@ -1,0 +1,49 @@
+ALAS_HMR_REQ
+id id_servico nome_proj natureza servico volume requisitos relevancia acesso_ext transf acesso_int status responsavel criado
+
+idservico = ANO . RAND(1001,9999); 20202548
+
+Página que exibe infos do serviço, botão aceite e cadastro.
+
+---------------------
+
+METRICA_IMPACTO
+
+NATUREZA_D, VOLUME_V, REQUISITOS_L, RELEVANCIA_N = IMPACTO (D*V*L*N)
+
+TÓPICO NATUREZA DOS DADOS TRAMITADOS (D)	PES
+SUBTÓPICO - Dados Simples			1
+SUBTÓPICO - Dados Financeiros			2
+SUBTÓPICO - Dados Comportamentais		2
+SUBTÓPICO - Dados Sensíveis			3
+
+TÓPICO VOLUME DE TITULARES INCLUÍDOS (V)
+SUBTÓPICO - 1 a 100 tit				1
+SUBTÓPICO - 100 a 1000				2
+SUBTÓPICO - 1000 a 10000			3
+SUBTÓPICO - 10000 a 500000			4
+SUBTÓPICO - Acima de 500000			5
+
+TÓPICO REQUISITOS LEGAIS E REGULATÓRIOS (V)							
+SUBTÓPICO - Somente a LGPD									1
+SUBTÓPICO - LGPD e regulamentação restrita a nível local (municipal e/ou estadual)		2
+SUBTÓPICO - LGPD e regulamentação restrita a nível nacional (municipal, estadual e federal)	3
+SUBTÓPICO - LGPD e regulamentação a nível internacional						4
+
+TÓPICO RELEVÂNCIA PARA O NEGÓCIO (N)
+SUBTÓPICO - Sem necessidade de exigência de SLA (Service Level Agreement) mínima			1
+SUBTÓPICO - Serviços podem ficar indisponíveis por mais de 1 (um) mês sem prejuízo significativo	2
+SUBTÓPICO - Indisponibilidade por menos de 1 (um) mês gera prejuízo significativo			3
+SUBTÓPICO - Indisponibilidade por menos de 1 (uma) semana gera prejuízo significativo			4
+SUBTÓPICO - Indisponibilidade por menos de 1 (um) dia gera prejuízo significativo			5
+
+	
+
+----------------------
+cruzar id_servico da ALAS_HMR_REQ com id_servico ALAS_HMR_REQ_LOG (JOIN)
+obter todas as linhas de alteracao e responsavel.
+
+
+tabela de log para servico
+
+id id_servico responsavel alteracao(datetime) 

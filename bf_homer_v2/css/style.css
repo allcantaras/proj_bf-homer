@@ -1,0 +1,110 @@
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.boxlogin {
+	border-radius: 10px 10px 0 0;
+}
+
+.sidenav .collapsible li.waves-effect {
+    display: block;
+}
+
+.sidenav .collapsible > li {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: background-color .2s;
+}
+
+.sidenav .collapsible li, .sidenav-fixed .collapsible li {
+    padding: 0;
+}
+
+ul:not(.browser-default) > li {
+    list-style-type: none;
+}
+
+.sidenav li {
+    float: none;
+    line-height: 48px;
+}
+
+.sidenav .collapsible-header, .sidenav-fixed .collapsible-header {
+    background-color: transparent;
+    border: none;
+    line-height: inherit;
+    height: inherit;
+    padding: 0 16px;
+}
+
+.sidenav .collapsible .collapsible-header {
+    text-transform: uppercase;
+
+}
+
+.sidenav .collapsible-header, .sidenav-fixed .collapsible-header {
+    background-color: transparent;
+    border: none;
+    line-height: inherit;
+    height: inherit;
+    padding: 0 16px;
+}
+
+.navbar-fixed {
+    position: relative;
+    height: 56px;
+    z-index: 997;
+}
+
+
+#spantable {
+    padding: 3px;
+    border-radius: 4px;
+}
+
+
+.mycont {
+    width: 90% !important;
+}
+
+/*.toast {
+    background-color: green !important;
+}
+*/
+
+/*.toast{
+    background-color: green !important;
+}*/
+
+
+footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #001a33;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    background-image: linear-gradient(#001a33, #003366);
+}
+
+blockquote {
+  border-left: 5px solid #01579b !important;
+}
+
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+}
+}
